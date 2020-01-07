@@ -1,0 +1,22 @@
+{
+    "name": "/etc/hosts",
+    "version": "1.0",
+    "description": "local /etc/hosts for Chrome!",
+    "permissions": [
+        "declarativeContent",
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
